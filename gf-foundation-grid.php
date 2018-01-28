@@ -15,5 +15,6 @@ add_action('init', function() {
 
 	require_once('classes/GFFoundation.php');
 
-	GFFoundation::init();
+	// GFFoundation::init();
+	$gf_foundation = new GFFoundation();
 });

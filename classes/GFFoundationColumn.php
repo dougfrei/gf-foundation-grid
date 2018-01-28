@@ -15,7 +15,7 @@ class GFFoundationColumn extends GF_Field
 		return false;
 	}
 
-	function get_form_editor_field_settings()
+	public function get_form_editor_field_settings()
 	{
 		return array(
 			'column_description',
@@ -36,6 +36,7 @@ class GFFoundationColumn extends GF_Field
 
 		if ($is_admin) {
 			$admin_buttons = $this->get_admin_buttons();
+			
 			return $admin_buttons.'<label class=\'gfield_label\'>'.$this->get_form_editor_field_title().'</label>{FIELD}<hr>';
 		}
 
